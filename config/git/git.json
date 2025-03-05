@@ -1,0 +1,34 @@
+{
+  "name": "Git Configuration",
+  "description": "Git version control configuration files",
+  "configs": [
+    {
+      "name": "gitconfig",
+      "description": "Main Git configuration file",
+      "source": "git/gitconfig",
+      "target": "$HOME/.gitconfig",
+      "type": "template"
+    },
+    {
+      "name": "gitignore",
+      "description": "Global Git ignore file",
+      "source": "git/gitignore",
+      "target": "$HOME/.gitignore_global",
+      "type": "symlink"
+    },
+    {
+      "name": "gitconfig_xdg",
+      "description": "XDG-compliant Git configuration",
+      "source": "git/gitconfig",
+      "target": "$XDG_CONFIG_HOME/git/config",
+      "type": "template"
+    },
+    {
+      "name": "gitignore_xdg",
+      "description": "XDG-compliant global Git ignore file",
+      "source": "git/gitignore",
+      "target": "$XDG_CONFIG_HOME/git/ignore",
+      "type": "symlink"
+    }
+  ]
+}

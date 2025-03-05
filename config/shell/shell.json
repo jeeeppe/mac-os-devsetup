@@ -1,0 +1,48 @@
+{
+  "name": "Shell Configuration",
+  "description": "Zsh shell configuration files",
+  "configs": [
+    {
+      "name": "zshrc",
+      "description": "Main zsh configuration file",
+      "source": "shell/.zshrc",
+      "target": "$HOME/.zshrc",
+      "type": "symlink"
+    },
+    {
+      "name": "zsh_path",
+      "description": "Path and environment variables",
+      "source": "shell/zsh/paths.zsh",
+      "target": "$XDG_CONFIG_HOME/zsh/paths.zsh",
+      "type": "symlink"
+    },
+    {
+      "name": "zsh_aliases",
+      "description": "Shell aliases",
+      "source": "shell/zsh/aliases.zsh",
+      "target": "$XDG_CONFIG_HOME/zsh/aliases.zsh",
+      "type": "symlink"
+    },
+    {
+      "name": "zsh_functions",
+      "description": "Shell functions",
+      "source": "shell/zsh/functions.zsh",
+      "target": "$XDG_CONFIG_HOME/zsh/functions.zsh",
+      "type": "symlink"
+    },
+    {
+      "name": "zsh_theme",
+      "description": "Shell prompt and theme",
+      "source": "shell/zsh/theme.zsh",
+      "target": "$XDG_CONFIG_HOME/zsh/theme.zsh",
+      "type": "symlink"
+    },
+    {
+      "name": "zsh_completion",
+      "description": "Completion configuration",
+      "source": "shell/zsh/completion.zsh",
+      "target": "$XDG_CONFIG_HOME/zsh/completion.zsh",
+      "type": "symlink"
+    }
+  ]
+}

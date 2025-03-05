@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#"""
+#Installing homebrew and applications..
+#"""
+
 # Applications installation script
 # Installs and configures major applications
 

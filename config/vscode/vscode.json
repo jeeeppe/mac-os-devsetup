@@ -1,0 +1,27 @@
+{
+  "name": "VS Code Configuration",
+  "description": "Visual Studio Code editor configurations",
+  "configs": [
+    {
+      "name": "settings",
+      "description": "VS Code user settings",
+      "source": "vscode/settings.json",
+      "target": "$HOME/Library/Application Support/Code/User/settings.json",
+      "type": "symlink"
+    },
+    {
+      "name": "keybindings",
+      "description": "VS Code keyboard shortcuts",
+      "source": "vscode/keybindings.json",
+      "target": "$HOME/Library/Application Support/Code/User/keybindings.json",
+      "type": "symlink"
+    },
+    {
+      "name": "snippets",
+      "description": "VS Code code snippets",
+      "source": "vscode/snippets",
+      "target": "$HOME/Library/Application Support/Code/User/snippets",
+      "type": "symlink"
+    }
+  ]
+}
